@@ -1,8 +1,10 @@
-// alert("Oi! Eu sou o Alert");
-// document.write("Estou na página.");
-// console.log("Eu estou no console.");
+ alert("Oi! Eu sou o Alert");
+ //document.write("Estou na página.");
+ console.log("Eu estou no console.");
 let tabuada = 5;
 function alo(){
+
+    let tabuada = document.getElementById("entrada").value;
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
     document.write(tabuada + " x 1 = " + (tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = " + (tabuada*2)+"<br>");
@@ -31,4 +33,10 @@ function quadrado(){
         document.write("O quadrado de " + i + " é " + (i*i)+"<br>");
     }
 }
-Footer
+
+function total(){
+    let val = document.getElementById("valor").value;
+    let ju = document.getElementById("juros").value;
+    let resultado = ( val * ( ju/100 ) ) + val ;
+    document.write("0 total é de: " + resultado );
+}
